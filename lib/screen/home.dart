@@ -5,8 +5,10 @@ import 'package:my_widgets/widget/menu.dart';
 class HomePage extends StatelessWidget {
 
 
-  static final String routeName = "home";
+  static const String routeName = "home";
   final prefs = UserPreferences();
+
+  HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,21 +19,21 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("User preferences"),
+        title: const Text("User preferences"),
         backgroundColor: (prefs.colorSecundario ) ? Colors.teal : Colors.blue,
       ),
-      drawer: MenuWidget(),
+      drawer: const MenuWidget(),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text("Color secundario: ${prefs.colorSecundario}"),
-          Divider(),
+          const Divider(),
 
           Text("Género: ${prefs.genero}"),
-          Divider(),
+          const Divider(),
 
           Text("Nombre: ${prefs.nombre}"),
-          Divider(),
+          const Divider(),
         ],
       ),
     );

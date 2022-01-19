@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         initialRoute: prefs.ultimaPagina,
         routes:{
           HomePage.routeName : (BuildContext context) => HomePage(),
-          SettingsPage.routeName : (BuildContext context) => SettingsPage(),
+          SettingsPage.routeName : (BuildContext context) => const SettingsPage(),
 
         }
     );

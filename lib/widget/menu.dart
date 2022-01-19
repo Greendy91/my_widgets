@@ -11,35 +11,35 @@ class MenuWidget extends StatelessWidget {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          DrawerHeader(
-            child: Container(child: Text("My menu")),
+          const DrawerHeader(
+            child: Text("My menu"),
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: ExactAssetImage("assets/images/fondo.jpg"),
                     fit: BoxFit.cover)),
           ),
           ListTile(
-              leading: Icon(
+              leading: const Icon(
                 Icons.home,
                 color: Colors.blue,
               ),
-              title: Text("Home"),
+              title: const Text("Home"),
               onTap: () =>
                   Navigator.pushReplacementNamed(context, HomePage.routeName)),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.people,
               color: Colors.blue,
             ),
-            title: Text("People"),
+            title: const Text("People"),
             onTap: () {},
           ),
           ListTile(
-              leading: Icon(
+              leading: const Icon(
                 Icons.settings,
                 color: Colors.blue,
               ),
-              title: Text("Settings"),
+              title: const Text("Settings"),
               onTap: () {
                 //Navigator.pop(context);
                 //Navigator.pushNamed(context, SettingsPage.routeName);
