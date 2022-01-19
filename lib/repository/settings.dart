@@ -1,13 +1,9 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserPreferences {
-
   static final UserPreferences _instancia = UserPreferences._internal();
 
-  factory UserPreferences (){
-
+  factory UserPreferences() {
     return _instancia;
   }
 
@@ -16,42 +12,38 @@ class UserPreferences {
   late SharedPreferences _prefs;
 
   initPrefs() async {
-    this._prefs = await SharedPreferences.getInstance();
+    _prefs = await SharedPreferences.getInstance();
   }
 
-
-
-  int get genero{
+  int get genero {
     return _prefs.getInt("genero") ?? 1;
   }
-  set genero ( int value ){
+
+  set genero(int value) {
     _prefs.setInt("genero", value);
   }
 
-
-  bool get colorSecundario{
+  bool get colorSecundario {
     return _prefs.getBool("colorSecundario") ?? false;
   }
-  set colorSecundario ( bool value ){
+
+  set colorSecundario(bool value) {
     _prefs.setBool("colorSecundario", value);
   }
 
-
-  String get nombre{
+  String get nombre {
     return _prefs.getString("nombre") ?? "";
   }
-  set nombre ( String value ){
+
+  set nombre(String value) {
     _prefs.setString("nombre", value);
   }
 
-
-
-  String get ultimaPagina{
+  String get ultimaPagina {
     return _prefs.getString("ultimaPagina") ?? "home";
   }
-  set ultimaPagina ( String value ){
+
+  set ultimaPagina(String value) {
     _prefs.setString("ultimaPagina", value);
   }
-
-
 }
