@@ -16,6 +16,8 @@ class MyApp extends StatelessWidget {
 
   final prefs = UserPreferences();
 
+  MyApp({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
