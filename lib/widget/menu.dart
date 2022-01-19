@@ -20,7 +20,7 @@ class MenuWidget extends StatelessWidget {
           ),
           ListTile(
               leading: Icon(
-                Icons.pages,
+                Icons.home,
                 color: Colors.blue,
               ),
               title: Text("Home"),
