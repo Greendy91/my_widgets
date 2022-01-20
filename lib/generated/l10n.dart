@@ -91,6 +91,16 @@ class S {
       args: [howMany],
     );
   }
+
+  /// `messages_es.dart`
+  String get messagesesdart {
+    return Intl.message(
+      'messages_es.dart',
+      name: 'messagesesdart',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -1,5 +1,5 @@
 // DO NOT EDIT. This is code generated via package:intl/generate_localized.dart
-// This is a library that provides messages for a en locale. All the
+// This is a library that provides messages for a es locale. All the
 // messages from the main program should be duplicated here with the same
 // function name.
 
@@ -18,21 +18,21 @@ final messages = new MessageLookup();
 typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 
 class MessageLookup extends MessageLookupByLibrary {
-  String get localeName => 'en';
+  String get localeName => 'es';
 
-  static String m0(name) => "Wellcome, ${name}";
+  static String m0(name) => "Bienvenido, ${name}";
 
   static String m1(lastname, name) =>
-      "Mi name is, ${lastname}, ${name}, ${lastname} ";
+      "Mi nombre es, ${lastname}, ${name}, ${lastname} ";
 
   static String m2(howMany) =>
-      "${Intl.plural(howMany, one: 'You have 1 item', other: 'You have ${howMany} items')}";
+      "${Intl.plural(howMany, one: 'Tienes 1 item', other: 'Tienes ${howMany} items')}";
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "messagesesdart":
             MessageLookupByLibrary.simpleMessage("messages_es.dart"),
-        "simpleText": MessageLookupByLibrary.simpleMessage("Hello, world"),
+        "simpleText": MessageLookupByLibrary.simpleMessage("Hola, mundo"),
         "textWithPlaceholder": m0,
         "textWithPlaceholders": m1,
         "textWithPlurals": m2

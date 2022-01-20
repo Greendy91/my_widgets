@@ -8,5 +8,6 @@
       "lastname": {}
     }
   },
-  "textWithPlurals": "{howMany, plural, one{Tienes 1 item} other{Tienes {howMany} items}}"
+  "textWithPlurals": "{howMany, plural, one{Tienes 1 item} other{Tienes {howMany} items}}",
+  "messagesesdart": "messages_es.dart"
 }
