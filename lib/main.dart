@@ -28,22 +28,14 @@ class MyApp extends StatelessWidget {
         HomePage.routeName: (BuildContext context) => HomePage(),
         SettingsPage.routeName: (BuildContext context) => const SettingsPage(),
       },
-      localizationsDelegates: [
+      localizationsDelegates: const [
         S.delegate,
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
-      home: Column(
-        children: <Widget>[
-          Text(S.of(context).simpleText),
-          Text(S.of(context).textWithPlaceholder("Yamile")),
-          Text(S.of(context).textWithPlaceholders("Yamile", "Cabrera")),
-          Text(S.of(context).textWithPlurals(2)),
 
-        ],
-      ),
     );
   }
 }

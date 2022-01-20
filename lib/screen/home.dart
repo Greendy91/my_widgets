@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:my_widgets/generated/l10n.dart';
 import 'package:my_widgets/repository/settings.dart';
 import 'package:my_widgets/widget/menu.dart';
+
 
 class HomePage extends StatelessWidget {
 
@@ -19,7 +21,8 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("User preferences"),
+        title: Text(  S.of(context).simpleText
+        ),
         backgroundColor: (prefs.colorSecundario ) ? Colors.teal : Colors.blue,
       ),
       drawer: const MenuWidget(),
