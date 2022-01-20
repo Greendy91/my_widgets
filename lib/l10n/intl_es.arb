@@ -1,0 +1,12 @@
+{
+  "simpleText": "Hola, mundo",
+  "textWithPlaceholder": "Bienvenido, {name}",
+  "textWithPlaceholders": "Mi nombre es, {lastname}, {name}, {lastname} ",
+  "@textWithPlaceholders": {
+    "placeholder": {
+      "name": {},
+      "lastname": {}
+    }
+  },
+  "textWithPlurals": "{howMany, plural, one{Tienes 1 item} other{Tienes {howMany} items}}"
+}
